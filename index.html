@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <!--to ensure that the browser can correctly interpret and display the text on the web page.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--to make the web pages responsive and adaptable to various screen sizes-->
+    <meta name="keywords" content="Sea Turtles, Nature, Sea, Animals"> <!--Keywords for search engines-->
+    <meta name="author" content="Rachel"> <!--Author of the webpage-->
+	<title>Homepage</title>
+    <link rel="icon" type="image/x-icon" href="Pictures/Logo1.png"> <!--Favicon img next to the title-->
+	<link rel="stylesheet" type="text/css" href="CSS/index.css.css">
+
+
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="index.html"><img src="images/Turtle Oasis Logo.png" alt="Logo"></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html"><b>Home</b></a></li>
+				<li><a href="Turtlecatergories.html"><b>Turtle Categories</b></a></li>
+				<li class="dropdown">
+					<a href="#"><b>Turtle Hatchery</b></a>
+					<div class="dropdown-content">
+						<a href="hikkaduwa.html"><b>Hikkaduwa</b></a>
+						<a href="#"><b>Kosgoda</b></a>
+						<a href="bentota.html"><b>Bentota</b></a>
+					</div>
+				</li>
+				<li><a href="threats.html"><b>Threats</b></a></li>
+				<li><a href="purchase and donate.html"><b>Purchase & Donate </b></a></li>
+       
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="banner">
+			<video class="banner-video" autoplay muted loop>
+			  <source src="images/turtle1.mp4" type="video/mp4">
+			</video>
+			<div class="banner-title">Turtle Hatchery in Sri Lanka</div>
+		  </section>
+
+		
+
+		<section class="turtle-population">
+			<h2>Sri Lanka's Turtle Population</h2>
+			<div class="description">
+				<p>
+          Sri Lanka is home to five of the world's seven species of sea turtles, including the Green Turtle, Olive Ridley Turtle, Loggerhead Turtle, Hawksbill Turtle, and Leatherback Turtle. These turtles are an important part of Sri Lanka's marine ecosystem and play a crucial role in maintaining a healthy balance in the ocean.
+          
+          Unfortunately, sea turtle populations in Sri Lanka and around the world have been declining rapidly due to human activities such as poaching, egg harvesting, pollution, and habitat destruction. Sri Lanka has recognized the importance of protecting these magnificent creatures and has taken steps to conserve sea turtle populations through conservation efforts.</p>
+			</div>
+		</section>
+
+			<section class="facts">
+				<h2>FACTS ABOUT TURTLES!</h2>
+
+			<div class="images">
+				<div class="image">
+					<img src="images/teeth.jpg" alt="Turtle 1">
+					<div class="image-text">
+						<h2>TURTLES DON’T HAVE TEETH!</h2>
+						<p>They use their beak-like mouth to grasp their food. This beak is made of keratin (the same stuff your fingernails are made of).</p>
+					</div>
+				</div>
+				<div class="image">
+					<img src="images/bone.jpg" alt="Turtle 2">
+					<div class="image-text">
+						<h2>THEY’RE WELL ‘ARD!</h2>
+						<p>Turtle shells are made of over 50 bones fused together - so they're literally wearing their bones on the outside.   They also have light, spongy bones that help them float.</p>
+					</div>
+				</div>
+				<div class="image">
+					<img src="images/home.jpg" alt="Turtle 3">
+					<div class="image-text">
+						<h2>THEY ALWAYS RETURN HOME!</h2>
+						<p>Females return to the same beach they hatched on, to lay their own eggs and bury them in sand ‘nests’. </p>
+					</div>
+                </div>
+			</div>
+	
+	</section>
+
+		<section class="you-will-also-like">
+			<h2>You Will Also Like!</h2>
+			<div class="boxes">
+				<div class="box">
+					<img src="images/water.jpg" alt="Like 1">
+					<div class="description-box">
+						<p>This is an image of a beautiful beach in Sri Lanka where you can go and see sea turtles nesting.</p>
+					</div>
+				</div>
+				<div class="box">
+					<img src="images/coconut.jpg" alt="Like 2">
+					<div class="description-box">
+						<p>This is an image of a sea turtle hatchery in Sri Lanka where you can learn more about sea turtles and their conservation.</p>
+					</div>
+				</div>
+				<div class="box">
+					<img src="images/turtle6.jpg" alt="Like 3">
+					<div class="description-box">
+						<p>This is an image of a baby sea turtle making its way to the ocean. You can witness this amazing sight in Sri Lanka.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <section>
+    <div id="Feedback">
+      <h9> FeedBack Form </h9>
+      <div class="Feedback-container">
+        <h1>Share your Opinion !</h1>
+        <form action="submit-form.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+  
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+  
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+	
+	<footer>
+		<div class="container">
+			<p>&copy; 2023 Enchanted Ocean. All rights reserved. | Designed by Rachel</p>
+		</div>
+	</footer>
+</main>
+</body>
+</html>	

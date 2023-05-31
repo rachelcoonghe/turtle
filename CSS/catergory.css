@@ -1,0 +1,328 @@
+body {
+	
+	font-family:Arial, Helvetica, sans-serif;
+    background-color:#EDF1D6;
+    
+}
+
+
+header {
+	background-color: #9DC08B;
+	padding: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 2px 5px , #285430(0,0,0,0.1);
+  
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	margin: 0 10px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	display: block;
+}
+
+nav ul li a:hover {
+	background-color: #40513B;
+	color: #fff;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #40513B;
+	box-shadow: 0 2px 5px #8cb7d1(0,0,0,0.1);
+	z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	background-color: #9DC08B;
+}
+
+.logo img {
+	max-width: 60px;
+	height: auto;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.body {
+  background-color: #EDF1D6;
+  font-family: Arial, sans-serif;
+}
+
+
+.hero {
+  background-image:url("/images/bentota.jpg"); 
+  height: 350px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  padding: 10px 30px;
+  font-size: 20px;
+  background-color: 41644A;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero .btn:hover {
+  background-color: #A4BC92;
+}
+
+
+.turtle-info {
+  padding: 50px 0;
+}
+
+.turtle-card {
+  background-color: #9DC08B;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 30px;
+  width: 1000px;
+  height: 350px;
+  margin-bottom: 30px;
+  margin-left: 125px;
+}
+
+.turtle-card img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.turtle-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.turtle-card p {
+  font-size: 18px;
+}
+
+.map {
+margin-bottom: 50px;
+height: 200px;
+  }
+
+
+.call-to-action {
+  background-color: #61764B;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.call-to-action h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.call-to-action p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.call-to-action .btn {
+  padding: 10px 30px;
+  font-size: 20px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.call-to-action .btn:hover {
+  background-color: #f2f2f2;
+}
+
+table {
+  border-collapse: collapse;
+  margin-left: 350px;
+  margin-top: 100px;
+  width: 600px;
+  margin-bottom: 100px;
+  background-color: #EDF1D6;
+  align-content: center;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background-color: #9DC08B;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px;
+}
+
+.hero {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 60px;
+  border-radius: 10px;
+  }
+  
+  .hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  }
+
+  .map{
+    text-align: center;
+  }                                
+
+
+
+footer {
+  background-color: #9DC08B;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+	header {
+	  flex-direction: column;
+	  padding: 10px;
+	}
+  
+	nav ul {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	nav ul li {
+	  margin: 10px 0;
+	}
+  
+	.dropdown {
+	  position: relative;
+	}
+  
+	.dropdown-content {
+	  display: none;
+	  position: static;
+	  background-color: transparent;
+	  box-shadow: none;
+	}
+  
+	.dropdown:hover .dropdown-content,
+	.dropdown:focus-within .dropdown-content {
+	  display: block;
+	  background-color: #9DC08B;
+	}
+  
+	.logo img {
+	  max-width: 40px;
+	}
+  }
+  
+  @media only screen and (max-width: 767px) {
+	.banner-title {
+	  font-size: 18px;
+	  top: 30%;
+	  text-align: center;
+	  display: flex;
+    margin-left: 30px
+    ;
+
+	}
+  }
+
+  @media only screen and (max-width: 767px) {
+    .turtle-card {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .turtle-card img {
+      width: 150px;
+    }
+  
+    .turtle-card h2 {
+      font-size: 20px;
+    }
+  
+    .turtle-card p {
+      font-size: 16px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    table {
+      margin-left: 0;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      width: 100%;
+      margin-left: 0.5px;
+      margin-right: 20px;
+    }
+
+  
+    th,
+    td {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    img {
+      max-width: 100px;
+    }
+  }

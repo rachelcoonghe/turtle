@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tickets Page</title>
+  <link rel="stylesheet" href="CSS/Payment.css">
+</head>
+<body>
+  <header>
+      <body>
+          <header>
+          <h1>Buy Tickets</h1>
+
+          
+             
+              <div class="logo">
+                  <a href="index.html"><img src="images/Turtle Oasis Logo.png" alt="Logo"></a>
+              </div>
+              <nav>
+                  <ul>
+                      <li><a href="index.html"><b>Home</b></a></li>
+                      <li><a href="Turtlecatergories.html"><b>Turtle Categories</b></a></li>
+                      <li class="dropdown">
+                          <a href="#"><b>Turtle Hatchery</b></a>
+                          <div class="dropdown-content">
+                              <a href="hikkaduwa.html"><b>Hikkaduwa</b></a>
+                              <a href="#"><b>Kosgoda</b></a>
+                              <a href="bentota.html"><b>Bentota</b></a>
+                          </div>
+                      </li>
+                      <li><a href="threats.html"><b>Threats</b></a></li>
+                      <li><a href="purchase and donate.html"><b>Purchase & Donate </b></a></li>
+                      <li><a href="Tickets.html"><b>Tickets </b></a></li>
+                      <li><a href="Details.html"><b>Details </b></a></li>
+                      <li><a href="Payment.html"><b>Payment </b></a></li>
+					  <li><a href="confirmation.html"><b>Confirmation </b></a></li>
+                  </ul>
+              </nav>
+          </header>
+      
+  </header>
+	<body>
+		<center>
+		  <div class="payment-container">
+			<div class="payment-form">
+			  <h2>Payment details</h2>
+			  <form id="paymentForm">
+				<label for="cardNumber">Card Number*</label>
+				<input type="text" id="cardNumber" required>
+				
+				<label for="expiryDate">Expiry Date*</label>
+				<input type="text" id="expiryDate" placeholder="MM/YY" required>
+				
+				<label for="cvc">CVC / CVV*</label>
+				<input type="text" id="cvc" required>
+				
+				<label for="nameOnCard">Name on Card*</label>
+				<input type="text" id="nameOnCard" required>
+			  </form>
+			</div>
+			<div class="summary-table">
+			  <h2>Summary</h2>
+			  <table>
+				<tr>
+					<td>Date</td>
+					<td id="summaryDate"></td>
+				  </tr>
+				  <tr>
+					<td>Time</td>
+					<td id="summaryTime"></td>
+				  </tr>
+				  <tr>
+					<td>Duration</td>
+					<td id="summaryDuration"></td>
+				  </tr>
+				  <tr>
+					<td>Tickets</td>
+					<td id="summaryTickets"></td>
+				  </tr>
+				  <tr>
+					<td>Total Payable</td>
+					<td id="summaryTotal"></td>
+				  </tr>
+			  </table>
+			  <button id="payButton" disabled>Pay <span id="payAmount"></span></button>
+			</div>
+		  </div>
+		</center>
+		<script src="Payment.js"></script>
+	  </body>
+	  <footer>
+		<div class="container">
+		  <p>&copy; 2023 Enchanted Ocean. All rights reserved. | Designed by Rachel</p>
+		</div>
+	  </footer>
+			</html>

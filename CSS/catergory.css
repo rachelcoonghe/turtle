@@ -147,11 +147,6 @@ nav ul li a:hover {
   font-size: 18px;
 }
 
-.map {
-margin-bottom: 50px;
-height: 200px;
-  }
-
 
 .call-to-action {
   background-color: #61764B;
@@ -220,12 +215,7 @@ img {
   max-width: 800px;
   margin: 0 auto;
   }
-
-  .map{
-    text-align: center;
-  }                                
-
-
+  
 
 footer {
   background-color: #9DC08B;
@@ -254,7 +244,7 @@ footer p {
 	}
   
 	.dropdown {
-	  position: relative;
++++++++++++++++++++++++++++++++++	  position: relative;
 	}
   
 	.dropdown-content {
@@ -284,6 +274,8 @@ footer p {
     margin-left: 30px
     ;
 
+    +
+    
 	}
   }
 

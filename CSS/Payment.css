@@ -1,0 +1,277 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #9DC08B;
+  color: #fff;
+  text-align: center;
+  padding: 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  max-width: 70px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #40513B;
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #40513B;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #9DC08B;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+
+  
+ /* Center the payment container */
+.payment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-left: 100px
+  ;
+}
+
+/* Style the payment form */
+.payment-form {
+  margin-right: 50px; /* Add some spacing between form and summary */
+  background-color: #9DC08B; 
+  width: 500px;
+  height: 350px;
+}
+
+
+.payment-form label,
+.payment-form input {
+  display: block; /* Display each label and input on a new line */
+  margin-bottom: 10px; /* Add spacing between each field */
+}
+
+table {
+  border-collapse: collapse;
+  max-width: 80%;
+ 
+background-color: #9DC08B;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.title-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summary {
+  border: 1px solid #397e42;
+  padding: 20px;
+  max-width: 70%;
+  background-color: #f5f5f5;
+  margin-left: 600px;
+}
+
+.charge-summary {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: #4CAF50;
+  
+  color: rgb(56, 139, 70);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #45a049;
+  
+}
+
+/* Style the "Pay" button */
+#payButton {
+  margin-top: 20px;
+  background-color: #3c8f5b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#payButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+footer {
+	background-color: #9DC08B;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+  margin-top: 20px;
+  }
+  
+  footer p {
+	font-size: 14px;
+  }
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .summary {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+	header {
+	  flex-direction: column;
+	  padding: 10px;
+	}
+  
+	nav ul {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	nav ul li {
+	  margin: 10px 0;
+	}
+  
+	.dropdown {
+	  position: relative;
+	}
+  
+	.dropdown-content {
+	  display: none;
+	  position: static;
+	  background-color: transparent;
+	  box-shadow: none;
+	}
+  
+	.dropdown:hover .dropdown-content,
+	.dropdown:focus-within .dropdown-content {
+	  display: block;
+	  background-color: #9DC08B;
+	}
+  
+	.logo img {
+	  max-width: 40px;
+	}
+  }
+  
+  @media only screen and (max-width: 767px) {
+	.banner-title {
+	  font-size: 18px;
+	  top: 30%;
+	  text-align: center;
+	  display: flex;
+
+	}
+  }
+
+  /* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .payment-container {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center; /* Center horizontally */
+  }
+
+  .payment-form {
+    margin-right: 100px; 
+    margin-top: 1300px;
+    margin-bottom: 20px; /* Add margin at the bottom */
+    width: 400px; /* Make the form wider */
+    height: 400px; /* Allow height to adjust based on content */
+  }
+
+  .summary-table {
+    width: 400px; /* Make the summary table wider */
+    height: 400px; /* Allow height to adjust based on content */
+    margin-bottom: 800px;
+    margin-right: 70px;
+  }
+  
+  #payButton {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 10px 0; /* Adjust padding for smaller screens */
+    margin-top: 500px; /* Adjust margin for smaller screens */
+
+  }
+  
+  footer p {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}
+

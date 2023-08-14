@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tickets Page</title>
+  <link rel="stylesheet" href="Details.css">
+ 
+      <body>
+          <header>
+          <h1>Buy Tickets</h1>
+
+          
+             
+              <div class="logo">
+                  <a href="index.html"><img src="images/Turtle Oasis Logo.png" alt="Logo"></a>
+              </div>
+              <nav>
+                  <ul>
+                      <li><a href="index.html"><b>Home</b></a></li>
+                      <li><a href="Turtlecatergories.html"><b>Turtle Categories</b></a></li>
+                      <li class="dropdown">
+                          <a href="#"><b>Turtle Hatchery</b></a>
+                          <div class="dropdown-content">
+                              <a href="hikkaduwa.html"><b>Hikkaduwa</b></a>
+                              <a href="#"><b>Kosgoda</b></a>
+                              <a href="bentota.html"><b>Bentota</b></a>
+                          </div>
+                      </li>
+                      <li><a href="threats.html"><b>Threats</b></a></li>
+                      <li><a href="purchase and donate.html"><b>Purchase & Donate </b></a></li>
+                      <li><a href="Tickets.html"><b>Tickets </b></a></li>
+                      <li><a href="Details.html"><b>Details </b></a></li>
+                      <li><a href="Payment.html"><b>Payment </b></a></li>
+                      <li><a href="confirmation.html"><b>Confirmation </b></a></li>
+                  </ul>
+              </nav>
+          </header>
+      
+  </header>
+
+    <main>
+      <center>
+        <div class="details-and-summary">
+          <div class="details-form">
+            <h2>Enter your details</h2>
+            <form id="detailsForm">
+              <label for="fullName">Full Name*</label>
+              <input type="text" id="fullName" required>
+              
+              <label for="mobileNumber">Mobile Number*</label>
+              <div class="input-container">
+                <!-- Add country code select and input for mobile number -->
+                <select id="countryCode">
+                    <option value="+94">+94 (Sri Lanka)</option>
+                    <option value="+1">+1 (USA)</option>
+                    <option value="+44">+44 (UK)</option>
+                    <option value="+61">+61 (Australia)</option>
+                    <option value="+81">+81 (Japan)</option>
+                    <option value="+49">+49 (Germany)</option>
+                    <option value="+33">+33 (France)</option>
+                    <option value="+34">+34 (Spain)</option>
+                    <option value="+39">+39 (Italy)</option>
+                    <option value="+86">+86 (China)</option>
+                    <option value="+91">+91 (India)</option>
+                    <option value="+7">+7 (Russia)</option>
+                    <option value="+82">+82 (South Korea)</option>
+                    <option value="+971">+971 (UAE)</option>
+                    <option value="+966">+966 (Saudi Arabia)</option>
+                  
+                  <!-- Add more country options as needed -->
+                </select>
+                <input type="text" id="mobileNumber" required>
+              </div>
+              
+              <label for="email">Email*</label>
+              <input type="email" id="email" required>
+              
+              <label for="confirmEmail">Confirm Email*</label>
+              <input type="email" id="confirmEmail" required>
+              
+              <label for="gender">Gender</label>
+              <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+              
+              <br><br><br>
+              <div class="summary-container">
+              <section id="summary">
+                <h2>Summary</h2>
+                <table>
+                  <tr>
+                    <td>Date</td>
+                    <td id="summaryDate"></td>
+                  </tr>
+                  <tr>
+                    <td>Time</td>
+                    <td id="summaryTime"></td>
+                  </tr>
+                  <tr>
+                    <td>Duration</td>
+                    <td id="summaryDuration"></td>
+                  </tr>
+                  <tr>
+                    <td>Tickets</td>
+                    <td id="summaryTickets"></td>
+                  </tr>
+                  <tr>
+                    <td>Total Payable</td>
+                    <td id="summaryTotal"></td>
+                  </tr>
+                </table>
+                <br><br><br>
+               
+                <button id="paymentButton">Go to Payment</button>
+
+
+
+              </section>
+          </div>
+        </center>
+      </div>
+      <script src="Details.js">
+
+const paymentButton = document.getElementById("paymentButton");
+
+paymentButton.addEventListener("click", () => {
+    window.location.href = "Payment.html";
+});
+      </script>
+    </head>
+    </body>
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Enchanted Ocean. All rights reserved. | Designed by Rachel</p>
+      </div>
+    </footer>
+    </html>

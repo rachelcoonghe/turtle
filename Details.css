@@ -1,0 +1,269 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #9DC08B;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    max-width: 60px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #40513B;
+    color: #fff;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #40513B;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #9DC08B;
+}
+
+
+main {
+    padding: 2rem;
+}
+/* Category Styles */
+.category {
+	font-size: 20px;
+	color: black;
+}
+
+.details-and-summary {
+  display: flex;
+  justify-content: space-between; /* Spread the elements across the available space */
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.details-form {
+  background-color: #9DC08B;
+  padding: 40px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.summary-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 40%;
+
+}
+
+
+.details-form h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.details-form label {
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.details-form input,
+.details-form select {
+  width: 400px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.details-form button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0074D9;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.details-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Summary Table Styles */
+#summary h2 {
+  margin-top: 20px;
+  font-size: 35px;
+}
+
+#summary table {
+  font-size: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#summary th,
+#summary td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+}
+
+#summary th {
+  background-color: #010101;
+  color: white;
+}
+
+/* Continue Button Styles */
+#continueButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #567952;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#continueButton:hover {
+  background-color: #537c3b;
+}
+
+footer {
+	background-color: #9DC08B;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+  margin-top: 20px;
+  }
+  
+  footer p {
+	font-size: 14px;
+  }
+
+
+@media only screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      padding: 10px;
+    }
+    
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    nav ul li {
+      margin: 10px 0;
+    }
+    
+    .dropdown {
+      position: relative;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: static;
+      background-color: transparent;
+      box-shadow: none;
+    }
+    
+    .dropdown:hover .dropdown-content,
+    .dropdown:focus-within .dropdown-content {
+      display: block;
+      background-color: #9DC08B;
+    }
+    
+    .logo img {
+      max-width: 40px;
+    }
+    }
+    
+     /* Styles for screens with a maximum width of 768px or less */
+    
+      /* Adjust the styles as needed */
+      .details-and-summary {
+        flex-direction: column;
+        align-items: stretch;
+      margin-right: 80px;
+       margin-left: 20px;
+      }
+    
+      .details-form,
+      .summary-container {
+        width: 100%;
+        margin-right: 20px;
+        
+      }
+  
+      @media (max-width: 768px) {
+        .details-form input,
+        .details-form select {
+          width: 100%; /* Use percentage width for responsiveness */
+          padding: 8px; /* Adjust padding for smaller screens */
+          margin-bottom: 10px; /* Adjust margin for smaller screens */
+        }
+      }
+    
+      @media (max-width: 768px) {
+        footer {
+          padding: 10px 0; /* Adjust padding for smaller screens */
+          margin-top: 100px; /* Adjust margin for smaller screens */
+        }
+        
+        footer p {
+          font-size: 12px; /* Adjust font size for smaller screens */
+        }
+      }
+      
+      
+      

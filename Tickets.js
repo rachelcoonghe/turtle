@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 document.getElementById("continueButton").addEventListener("click", function () {
   // Redirect to the details.html page
-  window.location.href = "details.html";
+  window.location.href = "Details.html";
 });
 
 
